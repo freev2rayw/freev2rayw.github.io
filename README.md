@@ -1,4 +1,4 @@
-# 免费V2rayW节点 - 6月2日23M/S|免费Clash/SSR/Shadowrocket/V2ray节点机场分享  更新时间 2025-06-02 11:01:26
+# 免费V2rayW节点 - 6月7日20.3M/S|免费SSR/V2ray/Clash/Shadowrocket节点机场分享  更新时间 2025-06-07 09:35:57
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://freev2rayw.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://freev2rayw.github.io/uploads/2025/06/0-20250602.yaml
-- https://freev2rayw.github.io/uploads/2025/06/1-20250602.yaml
-- https://freev2rayw.github.io/uploads/2025/06/2-20250602.yaml
-- https://freev2rayw.github.io/uploads/2025/06/3-20250602.yaml
-- https://freev2rayw.github.io/uploads/2025/06/4-20250602.yaml
+- https://freev2rayw.github.io/uploads/2025/06/0-20250607.yaml
+- https://freev2rayw.github.io/uploads/2025/06/1-20250607.yaml
+- https://freev2rayw.github.io/uploads/2025/06/2-20250607.yaml
+- https://freev2rayw.github.io/uploads/2025/06/3-20250607.yaml
+- https://freev2rayw.github.io/uploads/2025/06/4-20250607.yaml
 
 ### V2ray订阅链接
 
-- https://freev2rayw.github.io/uploads/2025/06/0-20250602.txt
-- https://freev2rayw.github.io/uploads/2025/06/1-20250602.txt
-- https://freev2rayw.github.io/uploads/2025/06/2-20250602.txt
-- https://freev2rayw.github.io/uploads/2025/06/3-20250602.txt
-- https://freev2rayw.github.io/uploads/2025/06/4-20250602.txt
+- https://freev2rayw.github.io/uploads/2025/06/0-20250607.txt
+- https://freev2rayw.github.io/uploads/2025/06/1-20250607.txt
+- https://freev2rayw.github.io/uploads/2025/06/2-20250607.txt
+- https://freev2rayw.github.io/uploads/2025/06/3-20250607.txt
+- https://freev2rayw.github.io/uploads/2025/06/4-20250607.txt
 
 ### Sing-box订阅链接
 
-- https://freev2rayw.github.io/uploads/2025/06/20250602.json
+- https://freev2rayw.github.io/uploads/2025/06/20250607.json
 
 ## 更多clash节点订阅 ：
 
