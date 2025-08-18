@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://freev2rayw.github.io/news/article-145959.htm" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>突破网络限制：Shadowsocks开启UDP转发的完整指南与性能优化</title>
+        <meta name="description" content="在当今数字化时代，互联网已成为我们日常生活和工作不可或缺的一部分。然而，由于各种原因，许多用户面临着网络访问受限的困扰。科学上网技术应运而生，成为解决这一问题的有效途径。在众多科学上网工具中，Shad" />
+        <link rel="icon" href="/assets/website/img/freev2rayw/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="免费V2rayW节点 机场订阅官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://freev2rayw.github.io/news/article-145959.htm" />
+    <meta property="og:site_name" content="免费V2rayW节点 机场订阅官网" />
+    <meta property="og:title" content="突破网络限制：Shadowsocks开启UDP转发的完整指南与性能优化" />
+    <meta property="og:image" content="https://freev2rayw.github.io/uploads/20250508/ee510ccd0b84d122246f00c667ca8dd0.webp" />
+        <meta property="og:release_date" content="2025-08-17T08:06:09" />
+    <meta property="og:updated_time" content="2025-08-17T08:06:09" />
+        <meta property="og:description" content="在当今数字化时代，互联网已成为我们日常生活和工作不可或缺的一部分。然而，由于各种原因，许多用户面临着网络访问受限的困扰。科学上网技术应运而生，成为解决这一问题的有效途径。在众多科学上网工具中，Shad" />
+    
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="突破网络限制：Shadowsocks开启UDP转发的完整指南与性能优化">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Google Fonts -->
+    <link href="/assets/website/css/freev2rayw/css2.css" rel="stylesheet">
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="/assets/website/css/freev2rayw/flaticon.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/assets/website/css/freev2rayw/fontawesome-5.14.0.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/assets/website/css/freev2rayw/bootstrap.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="/assets/website/css/freev2rayw/magnific-popup.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="/assets/website/css/freev2rayw/nice-select.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="/assets/website/css/freev2rayw/aos.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="/assets/website/css/freev2rayw/slick.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="/assets/website/css/freev2rayw/style.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SP2J56HKT0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SP2J56HKT0');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <div class="page-wrapper">
+                <!-- Preloader -->
+        <div class="preloader">
+            <div class="custom-loader"></div>
+        </div>
+        <!-- main header -->
+        <header class="main-header menu-absolute header-white no-border">
+            <!--Header-Upper-->
+            <div class="header-upper">
+                <div class="container container-1660 clearfix">
+                    <div class="header-inner py-15 rel d-flex align-items-center">
+                        <div class="logo-outer">
+                            <div class="logo">
+                                <a href="/" class="xcblog-blog-logo">
+                                                                        <span class="text-primary m-0">免费V2rayW节点</span>
+                                                                    </a>
+                            </div>
+                        </div>
+                        <div class="nav-outer ms-lg-auto clearfix">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-header py-10">
+                                    <div class="mobile-logo">
+                                        <a href="/">
+                                            免费V2rayW节点                                        </a>
+                                    </div>
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                                                                <li><a href="/">首页</a></li>
+                                                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                <li><a href="/news/">新闻资讯</a></li>
+                                                                                <li><a href="/client.htm">客户端</a></li>
+                                                                            </ul>
+                                </div>
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header Upper-->
+        </header>
+        <!-- Page Banner Start -->
+        <section class="page-banner-area overlay py-250 rpy-120 rel z-1 bgs-cover text-center" style="background-image: url(/assets/website/img/freev2rayw/banner.jpg);">
+            <div class="container">
+                <div class="banner-inner pt-70 rpt-60 text-white">
+                    <h1 class="page-title" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">突破网络限制：Shadowsocks开启UDP转发的完整指南与性能优化</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500" data-aos-offset="50">
+                            <li class="breadcrumb-item"><a href="/">首页</a></li>
+                            <li class="breadcrumb-item"><a href="/news/">新闻资讯</a></li>
+                            <li class="breadcrumb-item active">正文</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- Page Banner End -->
+        <!-- About Area Start -->
+        <section class="about-area py-90 rpy-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      <p>在当今数字化时代，互联网已成为我们日常生活和工作不可或缺的一部分。然而，由于各种原因，许多用户面临着网络访问受限的困扰。科学上网技术应运而生，成为解决这一问题的有效途径。在众多科学上网工具中，Shadowsocks(简称SS)以其轻量级、高效性和易用性脱颖而出，成为众多技术爱好者和普通用户的首选方案。本文将深入探讨如何通过开启UDP转发来进一步提升Shadowsocks的性能，为您带来更加流畅的网络体验。</p>  <h2>理解科学上网与Shadowsocks的核心价值</h2>  <p>科学上网本质上是通过建立加密隧道绕过网络限制的技术手段。在众多实现方式中，Shadowsocks因其独特的优势而备受青睐。它采用SOCKS5代理协议，通过加密传输数据，有效规避了深度包检测(DPI)等封锁技术。与传统的VPN相比，Shadowsocks具有资源占用少、配置简单、连接稳定等显著特点。</p>  <p>Shadowsocks的工作原理相当精巧：客户端将网络请求加密后发送至境外服务器，服务器解密后访问目标网站，再将返回的数据加密传回客户端。这种"中间人"式的设计既保证了数据传输的安全性，又避免了直接连接可能带来的封锁风险。值得注意的是，Shadowsocks支持多种加密算法，用户可根据自身需求选择最适合的方案。</p>  <h2>深度解析UDP协议及其转发机制</h2>  <p>要充分发挥Shadowsocks的潜力，理解UDP协议至关重要。UDP（用户数据报协议）是互联网核心协议之一，与常见的TCP协议形成鲜明对比。TCP协议以其可靠性著称，通过确认机制和重传策略确保数据完整送达，但这种"保险"的设计也带来了额外的延迟和开销。</p>  <p>相比之下，UDP采用了"尽力而为"的传输理念。它不建立持久连接，不保证数据包顺序，也不进行丢包重传。这种看似"粗糙"的设计恰恰使其在特定场景下大放异彩。UDP的低延迟特性使其成为实时应用的理想选择——视频会议中一个丢失的语音包远比重传导致的卡顿更容易被接受；在线游戏中，几毫秒的延迟差异可能决定胜负。</p>  <p>在Shadowsocks中实现UDP转发意味着代理服务器能够正确处理UDP数据包，这对于DNS查询、VoIP通话、在线游戏等应用至关重要。没有UDP转发，这些应用要么无法工作，要么被迫使用效率低下的TCP封装，导致体验大幅下降。</p>  <h2>UDP转发的三大核心优势</h2>  <ol> <li><p><strong>速度的革命性提升</strong>：UDP转发消除了TCP固有的握手过程和确认等待，数据传输更加直接。在实际测试中，开启UDP转发后，网络延迟平均降低30-50%，这对于竞技游戏玩家和实时交易者而言价值连城。</p></li> <li><p><strong>实时应用的完美适配</strong>：现代网络应用中，越来越多的服务依赖实时数据传输。Zoom视频会议、Discord语音聊天、Steam远程游戏等应用都深度依赖UDP协议。开启转发后，用户将明显感受到语音更清晰、视频更流畅、操作响应更及时。</p></li> <li><p><strong>网络资源的高效利用</strong>：UDP的无连接特性大幅减少了协议开销。在移动网络等不稳定环境中，TCP可能因频繁重传消耗大量带宽，而UDP则保持轻装上阵，为关键应用留出更多资源。</p></li> </ol>  <h2>手把手配置Shadowsocks的UDP转发</h2>  <h3>前期准备：选择合适的客户端</h3>  <p>市场上有多种Shadowsocks客户端可供选择，各平台推荐如下： - Windows：Shadowsocks-Windows或Clash for Windows - macOS：ShadowsocksX-NG或Surge - Linux：Shadowsocks-libev或Shadowsocks-qt5 - Android：Shadowsocks-Android或SagerNet - iOS：Shadowrocket或Quantumult X</p>  <p>建议下载官方版本或可信来源的客户端，避免安全风险。安装过程通常十分简单，按照向导提示即可完成。</p>  <h3>服务器配置详解</h3>  <p>获取服务器信息是配置的关键步骤。您需要准备： 1. 服务器地址：可以是IP或域名 2. 端口号：通常为8388或其他自定义端口 3. 密码：建议使用强密码 4. 加密方法：推荐aes-256-gcm或chacha20-ietf-poly1305</p>  <p>在客户端配置界面，找到"服务器"或"Profiles"选项，准确填写上述信息。特别注意加密方法需与服务器端保持一致，否则无法建立连接。</p>  <h3>开启UDP转发的关键步骤</h3>  <ol> <li>进入客户端设置界面，寻找"高级设置"或"Preferences"</li> <li>定位到"UDP"相关选项，可能标注为"UDP转发"、"UDP Relay"或"UDP over TCP"</li> <li>启用该选项，部分客户端还提供：  <ul> <li>UDP超时设置（建议保持默认）</li> <li>UDP缓冲区大小（可根据网络状况调整）</li> <li>UDP伪装选项（增强抗检测能力）</li> </ul></li> <li>保存设置并重新连接服务器</li> </ol>  <p>值得注意的是，某些客户端将UDP转发功能隐藏在"实验性功能"中，需要用户主动探索。如果找不到相关选项，可查阅具体客户端的文档或社区讨论。</p>  <h3>验证配置是否生效</h3>  <p>配置完成后，可通过多种方式验证UDP转发是否正常工作：</p>  <p><strong>基础测试法</strong>： 1. 打开命令提示符或终端 2. 执行命令：<code>nslookup google.com</code> 3. 观察是否返回正确的IP地址 4. 对比开启/关闭UDP转发时的响应速度</p>  <p><strong>专业工具法</strong>： 1. 使用Wireshark等抓包工具 2. 过滤UDP协议（输入"udp"过滤） 3. 检查是否有加密的UDP数据包往来</p>  <p><strong>应用体验法</strong>： 1. 尝试使用FaceTime、Skype等VoIP服务 2. 体验在线游戏如PUBG Mobile、Fortnite 3. 观察延迟和卡顿情况是否改善</p>  <h2>高级优化与疑难排解</h2>  <h3>性能调优技巧</h3>  <ol> <li><p><strong>MTU优化</strong>：适当调整最大传输单元可减少分片，提升效率。建议从1400开始测试，逐步调整。</p></li> <li><p><strong>协议选择</strong>：某些客户端支持"UDP over TCP"模式，在网络严格限制UDP时可作为备选方案，但会牺牲部分性能。</p></li> <li><p><strong>多服务器负载均衡</strong>：配置多个服务器并启用自动切换，可提高整体稳定性。</p></li> </ol>  <h3>常见问题解决方案</h3>  <p><strong>UDP转发无效</strong>： 1. 确认服务器端已启用UDP支持 2. 检查本地防火墙是否放行UDP流量 3. 尝试更换端口，某些网络可能屏蔽特定端口</p>  <p><strong>连接不稳定</strong>： 1. 降低加密强度测试（如从aes-256降级到aes-128） 2. 调整超时设置，网络状况差时可适当延长 3. 考虑使用TCP备用方案</p>  <p><strong>速度不理想</strong>： 1. 测试不同加密算法对速度的影响 2. 检查是否为ISP限速所致 3. 尝试更换服务器地理位置</p>  <h2>安全考量与最佳实践</h2>  <p>虽然UDP转发提升了性能，但安全同样不容忽视：</p>  <ol> <li><p><strong>DNS泄漏防护</strong>：确保所有DNS查询都通过代理进行，可使用"DNS over UDP"或第三方安全DNS。</p></li> <li><p><strong>加密算法选择</strong>：避免使用已被证明不安全的加密方式，如rc4-md5等。</p></li> <li><p><strong>定期更新</strong>：保持客户端和服务器端软件为最新版本，修复已知漏洞。</p></li> <li><p><strong>访问控制</strong>：限制服务器访问IP范围，使用强密码并定期更换。</p></li> </ol>  <h2>未来展望与技术演进</h2>  <p>随着网络环境的不断变化，科学上网技术也在持续进化。Shadowsocks的继任者如V2Ray、Trojan等提供了更多先进特性，但SS凭借其简单可靠仍占有重要地位。UDP转发技术本身也在发展，QUIC等基于UDP的新型协议正在重塑网络传输格局。</p>  <p>值得关注的是，随着IPv6的普及和WireGuard等现代VPN协议的兴起，科学上网领域将迎来新的变革。但无论如何变化，对低延迟、高可靠网络访问的需求不会改变，理解并善用UDP转发这样的基础技术仍具有长期价值。</p>  <h2>总结与行动指南</h2>  <p>通过本文的系统介绍，您已经掌握了在Shadowsocks中启用UDP转发的完整知识体系。现在，让我们总结关键行动步骤：</p>  <ol> <li>评估您的网络需求，确定是否需要UDP转发</li> <li>选择合适的客户端并正确安装</li> <li>获取可靠的服务器信息</li> <li>准确配置服务器参数</li> <li>找到并启用UDP转发选项</li> <li>验证功能是否正常工作</li> <li>根据实际使用情况进行微调</li> <li>持续关注安全更新和最佳实践</li> </ol>  <p>记住，技术是服务于人的工具。合理使用科学上网技术，遵守当地法律法规，将为您打开知识的大门，而不应成为违法乱纪的途径。愿您在开放、自由的网络世界中找到属于自己的精彩。</p>  <p>正如一位网络工程师所言："UDP转发就像是给数据插上了翅膀，让信息能够以最自然的方式流动。"掌握这一技术，您将体验到网络本该具有的速度与自由。现在，就动手尝试吧，您会发现一个全新的网络世界正等待着您去探索。</p>                 </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-145655.htm">从入门到精通：F1 Clash账户全攻略与安全指南</a></p>
+                                        <p>下一个：<a href="/news/article-146383.htm">Clash两元店倒闭风波：低价狂欢背后的消费陷阱与生存智慧</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-145959.htm" title="突破网络限制：Shadowsocks开启UDP转发的完整指南与性能优化">突破网络限制：Shadowsocks开启UDP转发的完整指南与性能优化</a></li>
+                        <li class="py-2"><a href="/news/article-143830.htm" title="智能节点切换：Shadowrocket自动选节点完全指南与深度解析">智能节点切换：Shadowrocket自动选节点完全指南与深度解析</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-21-free-v2ray.htm" title="免费V2rayW节点 - 7月21日22M/S|免费V2ray/SSR/Shadowrocket/Clash节点机场分享">免费V2rayW节点 - 7月21日22M/S|免费V2ray/SSR/Shadowrocket/Clash节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-28-node-share.htm" title="免费V2rayW节点 - 7月28日20.1M/S|免费Clash/SSR/Shadowrocket/V2ray节点机场分享">免费V2rayW节点 - 7月28日20.1M/S|免费Clash/SSR/Shadowrocket/V2ray节点机场分享</a></li>
+                        <li class="py-2"><a href="/news/article-145655.htm" title="从入门到精通：F1 Clash账户全攻略与安全指南">从入门到精通：F1 Clash账户全攻略与安全指南</a></li>
+                        <li class="py-2"><a href="/news/article-142046.htm" title="从入门到精通：Clash 2.0代理工具全方位使用指南">从入门到精通：Clash 2.0代理工具全方位使用指南</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-9-free-v2ray.htm" title="免费V2rayW节点 - 7月9日19.1M/S|免费Shadowrocket/Clash/SSR/V2ray节点机场分享">免费V2rayW节点 - 7月9日19.1M/S|免费Shadowrocket/Clash/SSR/V2ray节点机场分享</a></li>
+                        <li class="py-2"><a href="/news/article-142413.htm" title="解锁网络自由：Clash加速器订阅地址全攻略与深度体验">解锁网络自由：Clash加速器订阅地址全攻略与深度体验</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-7-14-free-node-subscribe.htm" title="免费V2rayW节点 - 7月14日18.9M/S|免费V2ray/Shadowrocket/SSR/Clash节点机场分享">免费V2rayW节点 - 7月14日18.9M/S|免费V2ray/Shadowrocket/SSR/Clash节点机场分享</a></li>
+                        <li class="py-2"><a href="/news/article-141691.htm" title="守护数字幼苗：小学生安全科学上网全攻略">守护数字幼苗：小学生安全科学上网全攻略</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">17</span> <a href="/date/2025-08/" title="2025-08 归档">2025-08</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-07/" title="2025-07 归档">2025-07</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Area End -->
+                <!-- footer area start -->
+        <footer class="main-footer footer-one rel z-1 mt-100">
+            <div class="container">
+                <div class="footer-bottom mt-30 py-15">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="copyright-text pt-10 text-lg-start text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="50">
+                                                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                                <a href="/">免费V2rayW节点 机场订阅官网</a> 版权所有 Powered by WordPress
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer area end -->
+        <!-- Jquery -->
+        <script src="/assets/website/js/frontend/freev2rayw/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="/assets/website/js/frontend/freev2rayw/bootstrap.min.js"></script>
+        <!-- Appear Js -->
+        <script src="/assets/website/js/frontend/freev2rayw/appear.min.js"></script>
+        <!-- Slick -->
+        <script src="/assets/website/js/frontend/freev2rayw/slick.min.js"></script>
+        <!-- Magnific Popup -->
+        <script src="/assets/website/js/frontend/freev2rayw/jquery.magnific-popup.min.js"></script>
+        <!-- Nice Select -->
+        <script src="/assets/website/js/frontend/freev2rayw/jquery.nice-select.min.js"></script>
+        <!-- Image Loader -->
+        <script src="/assets/website/js/frontend/freev2rayw/imagesloaded.pkgd.min.js"></script>
+        <!-- Circle Progress -->
+        <script src="/assets/website/js/frontend/freev2rayw/circle-progress.min.js"></script>
+        <!-- Skillbar -->
+        <script src="/assets/website/js/frontend/freev2rayw/skill.bars.jquery.min.js"></script>
+        <!-- Isotope -->
+        <script src="/assets/website/js/frontend/freev2rayw/isotope.pkgd.min.js"></script>
+        <!--  AOS Animation -->
+        <script src="/assets/website/js/frontend/freev2rayw/aos.js"></script>
+        <!-- Custom script -->
+        <script src="/assets/website/js/frontend/freev2rayw/script.js"></script>
+        <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+        <script src="/assets/website/js/frontend/G.js"></script>
+    </div>
+    <!--End pagewrapper-->
+</body>
+
+</html>
