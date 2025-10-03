@@ -1,4 +1,4 @@
-# 免费V2rayW节点 - 9月27日21.8M/S|免费Clash/SSR/V2ray/Shadowrocket节点机场分享  更新时间 2025-09-27 04:42:45
+# 免费V2rayW节点 - 10月3日18.3M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点节点机场分享  更新时间 2025-10-03 09:02:38
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://freev2rayw.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -7,27 +7,27 @@
 
 ## 订阅链接：
 
-### Clash订阅链接
+### 免费Clash节点订阅链接
 
-- https://freev2rayw.github.io/uploads/2025/09/0-20250927.yaml
-- https://freev2rayw.github.io/uploads/2025/09/1-20250927.yaml
-- https://freev2rayw.github.io/uploads/2025/09/2-20250927.yaml
-- https://freev2rayw.github.io/uploads/2025/09/3-20250927.yaml
-- https://freev2rayw.github.io/uploads/2025/09/4-20250927.yaml
+- https://freev2rayw.github.io/uploads/2025/10/0-20251003.yaml
+- https://freev2rayw.github.io/uploads/2025/10/1-20251003.yaml
+- https://freev2rayw.github.io/uploads/2025/10/2-20251003.yaml
+- https://freev2rayw.github.io/uploads/2025/10/3-20251003.yaml
+- https://freev2rayw.github.io/uploads/2025/10/4-20251003.yaml
 
-### V2ray订阅链接
+### 免费V2ray节点订阅链接
 
-- https://freev2rayw.github.io/uploads/2025/09/0-20250927.txt
-- https://freev2rayw.github.io/uploads/2025/09/1-20250927.txt
-- https://freev2rayw.github.io/uploads/2025/09/2-20250927.txt
-- https://freev2rayw.github.io/uploads/2025/09/3-20250927.txt
-- https://freev2rayw.github.io/uploads/2025/09/4-20250927.txt
+- https://freev2rayw.github.io/uploads/2025/10/0-20251003.txt
+- https://freev2rayw.github.io/uploads/2025/10/1-20251003.txt
+- https://freev2rayw.github.io/uploads/2025/10/2-20251003.txt
+- https://freev2rayw.github.io/uploads/2025/10/3-20251003.txt
+- https://freev2rayw.github.io/uploads/2025/10/4-20251003.txt
 
-### Sing-box订阅链接
+### 免费Sing-box节点订阅链接
 
-- https://freev2rayw.github.io/uploads/2025/09/20250927.json
+- https://freev2rayw.github.io/uploads/2025/10/20251003.json
 
-## 更多clash节点订阅 ：
+## 更多Clash节点订阅 ：
 
 
 ### 高速机场推荐1【<a href="https://www.nfsq.us/#/register?code=UTg5SIHV" target="_blank">农夫山泉</a>】
