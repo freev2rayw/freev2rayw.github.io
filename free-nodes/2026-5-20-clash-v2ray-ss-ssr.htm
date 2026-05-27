@@ -341,13 +341,9 @@ A4: 检查配置文件的服务器地址、端口和认证信息是否正确，�
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-5-19-clash-node.htm">免费V2rayW节点 - 5月19日20.4M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点节点机场分享</a></p>
+        <p>下一个：<a href="/free-nodes/2026-5-21-free-node-subscribe.htm">免费V2rayW节点 - 5月21日20.5M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/SSR节点/Trojan节点节点机场分享</a></p>
     </div>
 <h4>FAQ</h4>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的路由规则如何实现国内直连？</h5></div>
-    <div class="panel-body">
-        通过配置域名列表或 IP 段，将国内流量指向直连出口，而国外流量走代理节点。结合策略组和定期更新规则，可保持国内访问速度，同时优化海外访问体验。<hr />    </div>
-</div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Matsuri 节点延迟排序功能如何使用？</h5></div>
     <div class="panel-body">
@@ -359,9 +355,9 @@ A4: 检查配置文件的服务器地址、端口和认证信息是否正确，�
         通过选择真实可访问域名并使用有效证书，Trojan 流量可以完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的节点延迟测量如何帮助选择节点？</h5></div>
+    <div class="panel-heading"><h5>Vmess 节点使用 WebSocket + TLS 时应注意哪些参数？</h5></div>
     <div class="panel-body">
-        Shadowrocket 会测试节点延迟和丢包率，并根据结果排序。用户可快速选择延迟最低的节点访问网站或视频，提高连接速度和稳定性，优化整体网络体验。<hr />    </div>
+        需确保路径（path）与主机名（host）匹配服务器配置，TLS 证书有效，端口与防火墙设置开放。建议开启 mux 与 keepalive 优化连接稳定性，并定期测试延迟避免 CDN 缓存导致连接异常。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 支持规则分流功能吗？</h5></div>
@@ -369,14 +365,24 @@ A4: 检查配置文件的服务器地址、端口和认证信息是否正确，�
         支持。Surfboard 可通过规则文件和策略组将不同类型流量分配到指定节点。保证网页浏览、视频和游戏走最优线路，提高访问速度和整体网络稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 的节点延迟测量如何帮助选择节点？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 会测试节点延迟和丢包率，并根据结果排序。用户可快速选择延迟最低的节点访问网站或视频，提高连接速度和稳定性，优化整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 如何处理域名直连与代理的冲突？</h5></div>
+    <div class="panel-body">
+        在 Shadowrocket 的规则管理中优先设置具体规则（如 DOMAIN-KEYWORD 或 DOMAIN-SUFFIX），将直连规则放在规则列表靠前位置，避免被泛用的代理规则覆盖，从而确保特定域名走直连。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray QUIC 模式在高丢包网络中的优势？</h5></div>
     <div class="panel-body">
         QUIC 基于 UDP 协议，支持多路复用和零握手，可减少延迟和丢包。适合视频、游戏和即时通讯等高丢包环境，保证访问稳定性和速度，提高整体体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点延迟排序可以自动切换吗？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 的路由规则如何实现国内直连？</h5></div>
     <div class="panel-body">
-        Matsuri 会定期测速节点延迟，结合策略组，可自动选择延迟最低的节点处理流量。这样用户无需手动切换节点，就能保持访问速度和稳定性，优化网络体验。<hr />    </div>
+        通过配置域名列表或 IP 段，将国内流量指向直连出口，而国外流量走代理节点。结合策略组和定期更新规则，可保持国内访问速度，同时优化海外访问体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何根据延迟自动切换节点？</h5></div>
@@ -384,14 +390,9 @@ A4: 检查配置文件的服务器地址、端口和认证信息是否正确，�
         PassWall2 会定期测试节点延迟，并结合策略组自动切换到延迟最低的节点。无需用户手动操作，即可保证网页、视频和游戏流量的高速稳定访问，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Vmess 节点使用 WebSocket + TLS 时应注意哪些参数？</h5></div>
+    <div class="panel-heading"><h5>Matsuri 节点延迟排序可以自动切换吗？</h5></div>
     <div class="panel-body">
-        需确保路径（path）与主机名（host）匹配服务器配置，TLS 证书有效，端口与防火墙设置开放。建议开启 mux 与 keepalive 优化连接稳定性，并定期测试延迟避免 CDN 缓存导致连接异常。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 如何处理域名直连与代理的冲突？</h5></div>
-    <div class="panel-body">
-        在 Shadowrocket 的规则管理中优先设置具体规则（如 DOMAIN-KEYWORD 或 DOMAIN-SUFFIX），将直连规则放在规则列表靠前位置，避免被泛用的代理规则覆盖，从而确保特定域名走直连。    </div>
+        Matsuri 会定期测速节点延迟，结合策略组，可自动选择延迟最低的节点处理流量。这样用户无需手动切换节点，就能保持访问速度和稳定性，优化网络体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -420,16 +421,16 @@ A4: 检查配置文件的服务器地址、端口和认证信息是否正确，�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-4-17-free-clash-subscribe.htm" title="免费V2rayW节点 - 4月17日19.3M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点节点机场分享">免费V2rayW节点 - 4月17日19.3M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-28-node-share.htm" title="免费V2rayW节点 - 4月28日23M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Singbox节点节点机场分享">免费V2rayW节点 - 4月28日23M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Singbox节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-9-free-ssr-subscribe.htm" title="免费V2rayW节点 - 5月9日22.9M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点节点机场分享">免费V2rayW节点 - 5月9日22.9M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-18-free-shadowrocket-node.htm" title="免费V2rayW节点 - 5月18日21.9M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点节点机场分享">免费V2rayW节点 - 5月18日21.9M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-17-free-node-subscribe.htm" title="免费V2rayW节点 - 5月17日22.9M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点节点机场分享">免费V2rayW节点 - 5月17日22.9M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-19-clash-node.htm" title="免费V2rayW节点 - 5月19日20.4M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点节点机场分享">免费V2rayW节点 - 5月19日20.4M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-23-free-shadowrocket-node.htm" title="免费V2rayW节点 - 5月23日22.2M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点节点机场分享">免费V2rayW节点 - 5月23日22.2M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-20-free-node-subscribe.htm" title="免费V2rayW节点 - 4月20日19.5M/S|免费Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点节点机场分享">免费V2rayW节点 - 4月20日19.5M/S|免费Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/SSR节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-20-clash-v2ray-ss-ssr.htm" title="免费V2rayW节点 - 5月20日22.2M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点节点机场分享">免费V2rayW节点 - 5月20日22.2M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点节点机场分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-15-free-ssr-node.htm" title="免费V2rayW节点 - 4月15日18.8M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点机场分享">免费V2rayW节点 - 4月15日18.8M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-7-clash-v2ray-ss-ssr.htm" title="免费V2rayW节点 - 5月7日21M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点节点机场分享">免费V2rayW节点 - 5月7日21M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-3-free-v2ray.htm" title="免费V2rayW节点 - 5月3日18.8M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点节点机场分享">免费V2rayW节点 - 5月3日18.8M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-8-free-ssr-node.htm" title="免费V2rayW节点 - 5月8日21.8M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点机场分享">免费V2rayW节点 - 5月8日21.8M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-13-node-share-links.htm" title="免费V2rayW节点 - 4月13日22.6M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点机场分享">免费V2rayW节点 - 4月13日22.6M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-24-shadowrocket-node.htm" title="免费V2rayW节点 - 4月24日20.3M/S|免费Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点节点机场分享">免费V2rayW节点 - 4月24日20.3M/S|免费Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-12-free-ssr-node.htm" title="免费V2rayW节点 - 4月12日22.4M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点节点机场分享">免费V2rayW节点 - 4月12日22.4M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-21-free-v2ray.htm" title="免费V2rayW节点 - 4月21日21.9M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点机场分享">免费V2rayW节点 - 4月21日21.9M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-13-node-share-links.htm" title="免费V2rayW节点 - 5月13日22.9M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点节点机场分享">免费V2rayW节点 - 5月13日22.9M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-16-free-ssr-node.htm" title="免费V2rayW节点 - 4月16日22.3M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点节点机场分享">免费V2rayW节点 - 4月16日22.3M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点节点机场分享</a></li>
                     </ul>
     </div>
 </div>
@@ -441,7 +442,7 @@ A4: 检查配置文件的服务器地址、端口和认证信息是否正确，�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
