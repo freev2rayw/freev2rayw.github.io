@@ -282,9 +282,9 @@ A4：结合连接速度、设备兼容性、价格及隐私保护等因素，参
         Potatso Lite 支持手动测试单个节点延迟，但不支持批量自动测速。用户需逐个连接测试节点性能，或者结合其他客户端获取更全面的测速信息。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的内核能否替换？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 如何实现域名精确分流？</h5></div>
     <div class="panel-body">
-        可以。WinXray 的内核文件独立存在于程序目录中，用户可替换为最新的 v2ray-core 或 xray-core 文件以获取更好的性能与协议支持，但需保持版本兼容。<hr />    </div>
+        Sing-box 支持按域名匹配流量，将不同应用流量分配到指定节点。结合策略组使用，可自动选择最优节点，提高访问速度和网络稳定性，实现精确流量管理。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 的 Rule Provider 功能是干什么的？</h5></div>
@@ -292,14 +292,19 @@ A4：结合连接速度、设备兼容性、价格及隐私保护等因素，参
         Rule Provider 是 Clash 的规则订阅机制，它可以通过远程 URL 自动更新分流规则文件。这样用户无需手动修改本地配置，就能保持规则同步更新，例如广告过滤或流媒体分流。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 如何设置用户带宽与流量配额？</h5></div>
+    <div class="panel-body">
+        管理员可为每个用户单独设置带宽和流量上限。超出限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提高整体网络公平性和效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 是否支持多客户端节点管理？</h5></div>
     <div class="panel-body">
         支持。Nekobox 可以独立管理 Shadowsocks、Clash 等客户端节点，互不干扰。结合策略组，可实现多客户端流量分流和网络优化，提高节点管理效率和使用便利性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 的伪装域名为何重要？</h5></div>
+    <div class="panel-heading"><h5>WinXray 的内核能否替换？</h5></div>
     <div class="panel-body">
-        伪装域名必须是真实可访问的网站，且证书有效。它用于伪装流量，使 Trojan 的数据在外观上完全像正常 HTTPS 请求，从而有效降低被封锁和 DPI 检测的风险。<hr />    </div>
+        可以。WinXray 的内核文件独立存在于程序目录中，用户可替换为最新的 v2ray-core 或 xray-core 文件以获取更好的性能与协议支持，但需保持版本兼容。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 与 Hiddify Next 有什么区别？</h5></div>
@@ -307,14 +312,9 @@ A4：结合连接速度、设备兼容性、价格及隐私保护等因素，参
         Nekobox 更注重轻量化和本地化，界面简洁，支持多协议基础功能；而 Hiddify Next 则整合了订阅转换、测速、规则分流等高级功能，更适合技术用户使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何实现域名精确分流？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 如何按端口分流流量？</h5></div>
     <div class="panel-body">
-        Sing-box 支持按域名匹配流量，将不同应用流量分配到指定节点。结合策略组使用，可自动选择最优节点，提高访问速度和网络稳定性，实现精确流量管理。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何设置用户带宽与流量配额？</h5></div>
-    <div class="panel-body">
-        管理员可为每个用户单独设置带宽和流量上限。超出限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提高整体网络公平性和效率。<hr />    </div>
+        Sing-box 支持根据端口匹配流量，将不同应用流量分配到指定节点。结合策略组使用，可精准分流，提高访问速度和网络稳定性，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>如何防止 Clash 被系统防火墙阻断？</h5></div>
@@ -322,9 +322,9 @@ A4：结合连接速度、设备兼容性、价格及隐私保护等因素，参
         请在防火墙设置中允许 Clash 的执行文件通过网络访问，并开放其监听端口。若使用 Windows Defender，可在防火墙高级规则中手动添加入站和出站规则，确保代理通信正常。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何按端口分流流量？</h5></div>
+    <div class="panel-heading"><h5>Trojan 的伪装域名为何重要？</h5></div>
     <div class="panel-body">
-        Sing-box 支持根据端口匹配流量，将不同应用流量分配到指定节点。结合策略组使用，可精准分流，提高访问速度和网络稳定性，优化整体网络体验。    </div>
+        伪装域名必须是真实可访问的网站，且证书有效。它用于伪装流量，使 Trojan 的数据在外观上完全像正常 HTTPS 请求，从而有效降低被封锁和 DPI 检测的风险。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -372,16 +372,16 @@ A4：结合连接速度、设备兼容性、价格及隐私保护等因素，参
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-7-23-free-subscribe-node.htm" title="免费V2rayW节点 - 7月23日22.5M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点节点机场分享">免费V2rayW节点 - 7月23日22.5M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-30-node-share.htm" title="免费V2rayW节点 - 6月30日20.6M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 6月30日20.6M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-2-clash-node.htm" title="免费V2rayW节点 - 7月2日19.6M/S|免费SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点机场分享">免费V2rayW节点 - 7月2日19.6M/S|免费SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-22-clash-node-daily-updates.htm" title="免费V2rayW节点 - 6月22日18.7M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Singbox节点节点机场分享">免费V2rayW节点 - 6月22日18.7M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Singbox节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-17-free-v2ray-subscribe.htm" title="免费V2rayW节点 - 6月17日18M/S|免费Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点节点机场分享">免费V2rayW节点 - 6月17日18M/S|免费Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-16-clash-v2ray-ss-ssr.htm" title="免费V2rayW节点 - 7月16日20M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点节点机场分享">免费V2rayW节点 - 7月16日20M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-21-free-subscribe-node.htm" title="免费V2rayW节点 - 7月21日20.8M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 7月21日20.8M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-9-node-share-links.htm" title="免费V2rayW节点 - 6月9日21.6M/S|免费SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/Trojan节点节点机场分享">免费V2rayW节点 - 6月9日21.6M/S|免费SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/Trojan节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-28-clash-node.htm" title="免费V2rayW节点 - 6月28日18.7M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 6月28日18.7M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-27-shadowrocket-node.htm" title="免费V2rayW节点 - 6月27日22.6M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点节点机场分享">免费V2rayW节点 - 6月27日22.6M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-16-free-ssr-subscribe.htm" title="免费V2rayW节点 - 6月16日20.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点节点机场分享">免费V2rayW节点 - 6月16日20.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-11-free-node-subscribe-links.htm" title="免费V2rayW节点 - 7月11日19.6M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点节点机场分享">免费V2rayW节点 - 7月11日19.6M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-25-node-share-links.htm" title="免费V2rayW节点 - 7月25日18.2M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/SSR节点/Trojan节点节点机场分享">免费V2rayW节点 - 7月25日18.2M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/SSR节点/Trojan节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-11-node-share-links.htm" title="免费V2rayW节点 - 6月11日20M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 6月11日20M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-14-clash-v2ray-ss-ssr.htm" title="免费V2rayW节点 - 7月14日22M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 7月14日22M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-3-free-clash-subscribe.htm" title="免费V2rayW节点 - 7月3日21.5M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 7月3日21.5M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-18-free-v2ray.htm" title="免费V2rayW节点 - 7月18日19.4M/S|免费V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 7月18日19.4M/S|免费V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-10-free-shadowrocket-node.htm" title="免费V2rayW节点 - 6月10日20.9M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点节点机场分享">免费V2rayW节点 - 6月10日20.9M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-25-free-clash-subscribe.htm" title="免费V2rayW节点 - 6月25日22.5M/S|免费V2ray节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点节点机场分享">免费V2rayW节点 - 6月25日22.5M/S|免费V2ray节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-12-clash-node.htm" title="免费V2rayW节点 - 6月12日18.1M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/SSR节点节点机场分享">免费V2rayW节点 - 6月12日18.1M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/SSR节点节点机场分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -392,6 +392,9 @@ A4：结合连接速度、设备兼容性、价格及隐私保护等因素，参
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+            </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
             </li>
