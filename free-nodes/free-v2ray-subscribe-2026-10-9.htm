@@ -293,33 +293,9 @@ V3.0版本是一个面向所有用户的版本，尤其适合新手用户。它�
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-10-8-free-v2ray.htm">免费V2rayW节点 - 10月8日22M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点节点机场分享</a></p>
+        <p>下一个：<a href="/free-nodes/2026-10-10-node-share.htm">免费V2rayW节点 - 10月10日21.3M/S|免费SSR节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点节点机场分享</a></p>
     </div>
 <h4>FAQ</h4>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 支持哪些协议？</h5></div>
-    <div class="panel-body">
-        Clash 支持多种主流代理协议，包括 VMess、VLess、Trojan、Shadowsocks、Snell、Socks5 等。通过配置文件或订阅源，用户可以灵活组合不同协议的节点，实现复杂的分流策略与优先级控制。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS 的 XTLS 模式如何提升性能？</h5></div>
-    <div class="panel-body">
-        VLESS + XTLS 模式可以在加密传输中减少 TLS 握手和数据复制过程，从而显著降低延迟并减少 CPU 占用。这种优化特别适合高带宽或高并发的场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何实现端口与流量的精确分流？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持按端口匹配流量，将不同类型应用的流量分配到指定节点。结合策略组使用，可提高访问速度和网络稳定性，实现精准分流和优化用户体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 的配置文件可以与 Clash 通用吗？</h5></div>
-    <div class="panel-body">
-        Surfboard 基于 Clash 核心，因此支持大部分 YAML 配置文件，但部分字段如 rule-provider、external-controller 等可能不兼容。建议使用订阅转换工具将 Clash 文件转换为 Surfboard 兼容格式导入。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何按端口分流不同类型流量？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持根据端口匹配流量，将不同应用流量分配到指定节点。结合策略组可实现精准分流，提高访问速度和网络稳定性，优化整体网络体验和管理效率。<hr />    </div>
-</div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>为什么某些网站在通过代理后登录会频繁要求二次验证？</h5></div>
     <div class="panel-body">
@@ -329,6 +305,21 @@ V3.0版本是一个面向所有用户的版本，尤其适合新手用户。它�
     <div class="panel-heading"><h5>Hiddify Next 的用户管理可以分组吗？</h5></div>
     <div class="panel-body">
         支持用户分组管理，可为不同组设置独立带宽、流量配额和节点访问权限。分组管理便于大规模用户维护，确保每个组的网络资源合理分配，提升整体管理效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 的配置文件可以与 Clash 通用吗？</h5></div>
+    <div class="panel-body">
+        Surfboard 基于 Clash 核心，因此支持大部分 YAML 配置文件，但部分字段如 rule-provider、external-controller 等可能不兼容。建议使用订阅转换工具将 Clash 文件转换为 Surfboard 兼容格式导入。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 如何实现端口与流量的精确分流？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持按端口匹配流量，将不同类型应用的流量分配到指定节点。结合策略组使用，可提高访问速度和网络稳定性，实现精准分流和优化用户体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS 的 XTLS 模式如何提升性能？</h5></div>
+    <div class="panel-body">
+        VLESS + XTLS 模式可以在加密传输中减少 TLS 握手和数据复制过程，从而显著降低延迟并减少 CPU 占用。这种优化特别适合高带宽或高并发的场景。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 支持 Trojan 协议吗？</h5></div>
@@ -343,7 +334,17 @@ V3.0版本是一个面向所有用户的版本，尤其适合新手用户。它�
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 如何配置混淆以应对封锁升级？</h5></div>
     <div class="panel-body">
-        选择合适的混淆方式，如 tls1.2_ticket_auth，可模拟正常 HTTPS 流量。合理搭配协议和混淆参数，可有效降低被 DPI 检测和封锁的风险，提高节点长期稳定性。    </div>
+        选择合适的混淆方式，如 tls1.2_ticket_auth，可模拟正常 HTTPS 流量。合理搭配协议和混淆参数，可有效降低被 DPI 检测和封锁的风险，提高节点长期稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 如何按端口分流不同类型流量？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持根据端口匹配流量，将不同应用流量分配到指定节点。结合策略组可实现精准分流，提高访问速度和网络稳定性，优化整体网络体验和管理效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 支持哪些协议？</h5></div>
+    <div class="panel-body">
+        Clash 支持多种主流代理协议，包括 VMess、VLess、Trojan、Shadowsocks、Snell、Socks5 等。通过配置文件或订阅源，用户可以灵活组合不同协议的节点，实现复杂的分流策略与优先级控制。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -391,16 +392,16 @@ V3.0版本是一个面向所有用户的版本，尤其适合新手用户。它�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-12-clash-node.htm" title="免费V2rayW节点 - 9月12日22.9M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点节点机场分享">免费V2rayW节点 - 9月12日22.9M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点节点机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-16-free-clash.htm" title="免费V2rayW节点 - 9月16日21.8M/S|免费Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点节点机场分享">免费V2rayW节点 - 9月16日21.8M/S|免费Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-clash-v2ray-ss-ssr.htm" title="免费V2rayW节点 - 9月2日18.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点机场分享">免费V2rayW节点 - 9月2日18.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-8-free-v2ray.htm" title="免费V2rayW节点 - 10月8日22M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 10月8日22M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-9-17.htm" title="免费V2rayW节点 - 9月17日21M/S|免费Trojan节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点节点机场分享">免费V2rayW节点 - 9月17日21M/S|免费Trojan节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-9-29.htm" title="免费V2rayW节点 - 9月29日19.9M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点节点机场分享">免费V2rayW节点 - 9月29日19.9M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-10-5.htm" title="免费V2rayW节点 - 10月5日18.6M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点节点机场分享">免费V2rayW节点 - 10月5日18.6M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-10-9.htm" title="免费V2rayW节点 - 10月9日20.1M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点机场分享">免费V2rayW节点 - 10月9日20.1M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-30-node-share.htm" title="免费V2rayW节点 - 9月30日20.8M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点节点机场分享">免费V2rayW节点 - 9月30日20.8M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-20-free-shadowrocket-node.htm" title="免费V2rayW节点 - 9月20日18.9M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点节点机场分享">免费V2rayW节点 - 9月20日18.9M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-10-15.htm" title="免费V2rayW节点 - 10月15日18.4M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点节点机场分享">免费V2rayW节点 - 10月15日18.4M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-10-1.htm" title="免费V2rayW节点 - 10月1日19.5M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点节点机场分享">免费V2rayW节点 - 10月1日19.5M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-10-7.htm" title="免费V2rayW节点 - 10月7日19M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点节点机场分享">免费V2rayW节点 - 10月7日19M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点/SSR节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-24-clash-node.htm" title="免费V2rayW节点 - 9月24日19.7M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点节点机场分享">免费V2rayW节点 - 9月24日19.7M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点节点机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/clash-windows-2026-9-23.htm" title="免费V2rayW节点 - 9月23日18.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Clash节点节点机场分享">免费V2rayW节点 - 9月23日18.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Clash节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-9-27.htm" title="免费V2rayW节点 - 9月27日19.3M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 9月27日19.3M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-11.htm" title="免费V2rayW节点 - 9月11日20.9M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点节点机场分享">免费V2rayW节点 - 9月11日20.9M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Singbox节点/Clash节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-2-clash-v2ray-ss-ssr.htm" title="免费V2rayW节点 - 9月2日18.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点机场分享">免费V2rayW节点 - 9月2日18.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点机场分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -412,7 +413,7 @@ V3.0版本是一个面向所有用户的版本，尤其适合新手用户。它�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">16</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>

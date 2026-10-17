@@ -184,6 +184,41 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 协议如何配置优化抗封锁？</h5></div>
+    <div class="panel-body">
+        SSR 可通过选择合适协议、混淆方式和端口来降低被检测风险。合理配置可增强节点隐蔽性，提高长期稳定性，确保科学上网体验顺畅且可靠。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 与 Hiddify Next 有什么区别？</h5></div>
+    <div class="panel-body">
+        Nekobox 更注重轻量化和本地化，界面简洁，支持多协议基础功能；而 Hiddify Next 则整合了订阅转换、测速、规则分流等高级功能，更适合技术用户使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 支持手动和二维码导入节点吗？</h5></div>
+    <div class="panel-body">
+        支持。用户可以手动添加节点信息，或者通过扫描节点二维码导入节点。虽然不支持自动订阅更新，但足够满足轻量用户对节点管理和分流的需求。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统全局代理有何区别？</h5></div>
+    <div class="panel-body">
+        TUN 模式直接拦截 IP 层流量，不依赖应用代理设置，系统全局代理通常只影响支持 HTTP/HTTPS 的程序。TUN 更适合全局科学上网和游戏环境。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的 TLS 配置如何增强抗封锁能力？</h5></div>
+    <div class="panel-body">
+        TLS 配置可将流量伪装成正常 HTTPS 请求，隐藏真实数据特征。结合域名伪装、WebSocket 或 QUIC 等传输方式，可有效绕过封锁，提高节点长期可用性和连接稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何判断节点是否支持 UDP 转发以便游戏加速？</h5></div>
+    <div class="panel-body">
+        可通过客户端的协议与节点说明确认是否支持 UDP（例如支持 UDP Relay 或 TUN/TAP 模式）。也可实际用 UDP 测试工具或直接用目标游戏连接进行延迟/丢包测试以验证是否可用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan 如何实现伪装？</h5></div>
+    <div class="panel-body">
+        Trojan 使用 TLS 协议模拟正常的 HTTPS 流量，防火墙难以区分其与普通网站访问的区别。通过伪装域名、SNI 和证书匹配机制，它能在保障安全的同时隐藏真实代理流量。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 节点延迟排序功能如何提升访问体验？</h5></div>
     <div class="panel-body">
         Shadowrocket 会测速节点延迟和丢包率，并优先使用低延迟节点。结合策略组和分流规则，可保证网页、视频和游戏流量通过最优节点，提高访问速度和稳定性。<hr />    </div>
@@ -194,44 +229,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         Rule Provider 是 Clash 的规则订阅机制，它可以通过远程 URL 自动更新分流规则文件。这样用户无需手动修改本地配置，就能保持规则同步更新，例如广告过滤或流媒体分流。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 与 Hiddify Next 有什么区别？</h5></div>
-    <div class="panel-body">
-        Nekobox 更注重轻量化和本地化，界面简洁，支持多协议基础功能；而 Hiddify Next 则整合了订阅转换、测速、规则分流等高级功能，更适合技术用户使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统全局代理有何区别？</h5></div>
-    <div class="panel-body">
-        TUN 模式直接拦截 IP 层流量，不依赖应用代理设置，系统全局代理通常只影响支持 HTTP/HTTPS 的程序。TUN 更适合全局科学上网和游戏环境。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 如何实现伪装？</h5></div>
-    <div class="panel-body">
-        Trojan 使用 TLS 协议模拟正常的 HTTPS 流量，防火墙难以区分其与普通网站访问的区别。通过伪装域名、SNI 和证书匹配机制，它能在保障安全的同时隐藏真实代理流量。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>如何配置 Sing-box 使用 DoH 加密 DNS？</h5></div>
     <div class="panel-body">
-        在 dns 模块中添加类型为 doh 的上游，如 `https://1.1.1.1/dns-query`，并指定 bootstrap 地址。启用加密 DNS 可防止 DNS 泄露并加快国际解析速度，提高整体隐私保护。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 协议如何配置优化抗封锁？</h5></div>
-    <div class="panel-body">
-        SSR 可通过选择合适协议、混淆方式和端口来降低被检测风险。合理配置可增强节点隐蔽性，提高长期稳定性，确保科学上网体验顺畅且可靠。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 支持手动和二维码导入节点吗？</h5></div>
-    <div class="panel-body">
-        支持。用户可以手动添加节点信息，或者通过扫描节点二维码导入节点。虽然不支持自动订阅更新，但足够满足轻量用户对节点管理和分流的需求。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 TLS 配置如何增强抗封锁能力？</h5></div>
-    <div class="panel-body">
-        TLS 配置可将流量伪装成正常 HTTPS 请求，隐藏真实数据特征。结合域名伪装、WebSocket 或 QUIC 等传输方式，可有效绕过封锁，提高节点长期可用性和连接稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何判断节点是否支持 UDP 转发以便游戏加速？</h5></div>
-    <div class="panel-body">
-        可通过客户端的协议与节点说明确认是否支持 UDP（例如支持 UDP Relay 或 TUN/TAP 模式）。也可实际用 UDP 测试工具或直接用目标游戏连接进行延迟/丢包测试以验证是否可用。    </div>
+        在 dns 模块中添加类型为 doh 的上游，如 `https://1.1.1.1/dns-query`，并指定 bootstrap 地址。启用加密 DNS 可防止 DNS 泄露并加快国际解析速度，提高整体隐私保护。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -279,16 +279,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-10-free-node-subscribe.htm" title="免费V2rayW节点 - 9月10日18.9M/S|免费Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点节点机场分享">免费V2rayW节点 - 9月10日18.9M/S|免费Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-22-node-share.htm" title="免费V2rayW节点 - 9月22日21.7M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点机场分享">免费V2rayW节点 - 9月22日21.7M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-25.htm" title="免费V2rayW节点 - 9月25日18.8M/S|免费Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点机场分享">免费V2rayW节点 - 9月25日18.8M/S|免费Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-9-27.htm" title="免费V2rayW节点 - 9月27日19.3M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 9月27日19.3M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-10-1.htm" title="免费V2rayW节点 - 10月1日19.5M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点节点机场分享">免费V2rayW节点 - 10月1日19.5M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-9-23.htm" title="免费V2rayW节点 - 9月23日18.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Clash节点节点机场分享">免费V2rayW节点 - 9月23日18.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Clash节点节点机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-10-4-free-clash.htm" title="免费V2rayW节点 - 10月4日18.9M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 10月4日18.9M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-13.htm" title="免费V2rayW节点 - 9月13日20.1M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点机场分享">免费V2rayW节点 - 9月13日20.1M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-14-node-share.htm" title="免费V2rayW节点 - 9月14日19M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点节点机场分享">免费V2rayW节点 - 9月14日19M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-8-clash-node.htm" title="免费V2rayW节点 - 9月8日21.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 9月8日21.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-10-17.htm" title="免费V2rayW节点 - 10月17日21.1M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点/Singbox节点节点机场分享">免费V2rayW节点 - 10月17日21.1M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点/Singbox节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-26-free-ssr-subscribe.htm" title="免费V2rayW节点 - 9月26日20.2M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点节点机场分享">免费V2rayW节点 - 9月26日20.2M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-2-clash-v2ray-ss-ssr.htm" title="免费V2rayW节点 - 9月2日18.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点机场分享">免费V2rayW节点 - 9月2日18.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-20-free-shadowrocket-node.htm" title="免费V2rayW节点 - 9月20日18.9M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点节点机场分享">免费V2rayW节点 - 9月20日18.9M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-16-free-clash.htm" title="免费V2rayW节点 - 9月16日21.8M/S|免费Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点节点机场分享">免费V2rayW节点 - 9月16日21.8M/S|免费Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-24-clash-node.htm" title="免费V2rayW节点 - 9月24日19.7M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点节点机场分享">免费V2rayW节点 - 9月24日19.7M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-10-9.htm" title="免费V2rayW节点 - 10月9日20.1M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点机场分享">免费V2rayW节点 - 10月9日20.1M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-8-clash-node.htm" title="免费V2rayW节点 - 9月8日21.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点节点机场分享">免费V2rayW节点 - 9月8日21.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点节点机场分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -300,7 +300,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">16</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
